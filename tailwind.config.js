@@ -4,17 +4,22 @@ export default {
   theme: {
     extend: {},
     colors: {
-      mainblue: "#23A6F0",
-      papayas: {
-        textblack: "#252B42",
-        textgray: "#737373",
-        textwhite: "#FFFFFF",
+      mainSpace: {
+        blue: "#4a4e69",
+        grey: "#9a8c98",
+        beige: "#c9ada7",
+      },
+
+      textPapayas: {
+        black: "#22223b",
+        gray: "#f2e9e4",
+        white: "#FFFFFA",
       },
     },
     fontFamily: {
-      sans: ["Montserrat"],
-      serif: ["Montserrat"],
-      mono: ["Montserrat"],
+      sans: ["Libre Baskerville"],
+      serif: ["Libre Baskerville"],
+      mono: ["Libre Baskerville"],
     },
   },
   plugins: [],
