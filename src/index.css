@@ -2,10 +2,47 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  h1 {
+    @apply text-[58px];
+    @apply font-bold;
+    @apply text-textPapayas-black
+  }
+  h2 {
+    @apply text-[40px];
+    @apply text-[#252B42];
+  }
+  h3 {
+    @apply text-2xl;
+    @apply font-bold;
+    @apply text-[#252B42];
+  }
+  h4 {
+    @apply text-xl;
+  }
+  h5 {
+    @apply text-base;
+  }
+  h6 {
+    @apply text-sm;
+    @apply text-textPapayas-black;
+    @apply font-bold;
+  }
+  a {
+    @apply text-sm;
+    @apply font-bold;
+  }
+  li{
+    @apply text-sm;
+    @apply text-textPapayas-black;
+    @apply font-bold;
+  }
+}
+
 :root {
   @apply antialiased font-normal
 }
 
 body {
-  @apply min-h-screen m-0 flex min-w-80 
+  @apply min-h-screen bg-textPapayas-white
 }

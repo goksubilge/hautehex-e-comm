@@ -1,34 +1,65 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faCartShopping,
+  faUser,
+  faBars,
+  faSearch
+} from "@fortawesome/free-solid-svg-icons";
 
 function App() {
-  const [count, setCount] = useState(0)
+  
 
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+
+<header className="p-6 top-0 z-10 sticky">
+  
+  <section className="max-w-7xl mx-auto flex justify-between items-center">
+      
+      <h1 ><a href='/' className='text-[58px]'>HauteHex</a></h1>
+
+      <div className="flex justify-between items-center gap-3 sm:hidden">
+
+      <a href="/user" className="text-2xl"><FontAwesomeIcon icon={faUser} /></a>
+
+        <a href="/basket" className="text-2xl"><FontAwesomeIcon icon={faCartShopping} /></a>
+        
+        <button id="mobile-hamburger" className="text-2xl sm:hidden">
+        <FontAwesomeIcon icon={faBars}  /></button>
+        
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
+
+      <div className='sm:flex flex-row gap-1 hidden '>
+        <input type="text" placeholder='Search' className='px-6 py-3 border-2  rounded border-[#e1e2ea]'></input>
+        <select name="searchcategory" id="category" className='px-6 py-3 border-2  rounded border-[#e1e2ea]'><option value="All">All</option><option value="Off">Off</option><option value="On">On</option></select>
+        <button className="button-std "><FontAwesomeIcon icon={faSearch} /></button>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+      
+      <div className="sm:flex hidden gap-11 items-center">
+          <a href="/login" className=" text-base font-bold text-mainSpace-blue" >Login</a>
+          <button href="/register" className='button-std'>Become a member</button>
+      </div>
+      
+    
+      </section>
+
+      <div className='flex flex-col sm:hidden gap-1 mt-10 '>
+        <input type="text" placeholder='Search' className='px-6 py-3 border-2  rounded border-[#e1e2ea]'></input>
+        <select name="searchcategory" id="category" className='px-6 py-3 border-2  rounded border-[#e1e2ea]'><option value="All">All</option><option value="Off">Off</option><option value="On">On</option></select>
+        <button className="button-std "><FontAwesomeIcon icon={faSearch} /></button>
+      </div>
+      
+      <nav className="sm:flex gap-4 hidden ">
+        <a href="/">Home</a>
+        <a href="/shop">Shop</a>
+        <a href="/about">About</a>
+        <a href="/blog">Contact</a>
+      </nav>
+
+
+    </header>
+
+    
   )
 }
 

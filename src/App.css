@@ -1,9 +1,21 @@
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
   text-align: center;
 }
+
+.button-std{
+  @apply bg-mainSpace-blue;
+  @apply text-textPapayas-white;
+  @apply px-10 py-4;
+  @apply rounded;
+  @apply font-bold;
+}
+
+.container {
+  @apply max-w-full mx-0 my-auto;
+}
+
 
 .logo {
   height: 6em;
