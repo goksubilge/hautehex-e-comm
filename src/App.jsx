@@ -14,7 +14,7 @@ function App() {
 
 <header className="p-6 top-0 z-10 sticky">
   
-  <section className="max-w-7xl mx-auto flex justify-between items-center">
+    <section className="max-w-7xl mx-auto p-8   flex justify-between items-center">
       
       <h1 ><a href='/' className='text-[58px]'>HauteHex</a></h1>
 
@@ -29,19 +29,19 @@ function App() {
         
       </div>
 
-      <div className='sm:flex flex-row gap-1 hidden '>
+      <div className='lg:flex flex-row gap-1 py-4 px-8 hidden '>
         <input type="text" placeholder='Search' className='px-6 py-3 border-2  rounded border-[#e1e2ea]'></input>
         <select name="searchcategory" id="category" className='px-6 py-3 border-2  rounded border-[#e1e2ea]'><option value="All">All</option><option value="Off">Off</option><option value="On">On</option></select>
         <button className="button-std "><FontAwesomeIcon icon={faSearch} /></button>
       </div>
       
-      <div className="sm:flex hidden gap-11 items-center">
+      <div className="sm:flex hidden gap-11 p-4 items-center">
           <a href="/login" className=" text-base font-bold text-mainSpace-blue" >Login</a>
-          <button href="/register" className='button-std'>Become a member</button>
+          <button href="/register" className='button-std min-w-56 '>Become a member</button>
       </div>
       
     
-      </section>
+     </section>
 
       <div className='flex flex-col sm:hidden gap-1 mt-10 '>
         <input type="text" placeholder='Search' className='px-6 py-3 border-2  rounded border-[#e1e2ea]'></input>
@@ -57,7 +57,7 @@ function App() {
       </nav>
 
 
-    </header>
+</header>
 
     
   )
