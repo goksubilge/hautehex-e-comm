@@ -68,8 +68,9 @@ function App() {
     <section className="flex flex-wrap justify-between my-0 gap-8 py-20 p-48 ">
       <div className='gap-3'>
         <h3 className='min-w-max' >Get In Touch</h3>
-        <p className=" text-textPapayas-black text-sm min-w-max  ">
-            the quick fox jumps over the <span className="block text-mainSpace-blue">lazy dog</span>
+        <p className=" text-mainSpace-blue text-sm min-w-max my-3">
+            the quick fox jumps over the <span className="block 
+            text-mainSpace-blue">lazy dog</span>
         </p>
 
         <nav className="flex flex-row gap-3" aria-label="footer-nav">
@@ -95,18 +96,18 @@ function App() {
        
       <nav className="flex flex-col items-start gap-3" aria-label="footer-nav">
         <h3 >Features</h3>
-        <a>Business Marketing</a>
-        <a>User Analytic</a>
-        <a>Live Chat</a>
+        <a href="/pages" className='min-w-max'>Business Marketing</a>
+        <a href="/pages">User Analytic</a>
+        <a href="/pages">Live Chat</a>
         <a href='tel:444 0 444' >Unlimited Support</a>
       </nav>
 
       <nav className="flex flex-col items-start gap-3" aria-label="footer-nav">
         <h3 >Resources</h3>
-        <a>IOS & Android</a>
-        <a>Watch a Demo</a>
-        <a>Customers</a>
-        <a>API</a>
+        <a href="/pages">IOS & Android</a>
+        <a href="/pages">Watch a Demo</a>
+        <a href="/pages">Customers</a>
+        <a href="/pages">API</a>
       </nav>
 
     </section>
