@@ -7,34 +7,36 @@ import {
   faSearch
 } from "@fortawesome/free-solid-svg-icons";
 import { faInstagram,faFacebook,faSquareXTwitter } from '@fortawesome/free-brands-svg-icons';
-
+import ShopCardAData from './mocks/ShopCardAData';
+import ShopCardBData from './mocks/ShopCardBData';
 
 function App() {
   
-
   return (
     <>
-<header className="p-6 top-0 z-10 sticky">
+<header className="p-6 top-0 z-10 lg:sticky">
   
     <section className="max-w-7xl mx-auto p-8   flex justify-between items-center">
-      
       <h1 ><a href='/' className='text-[58px]'>HauteHex</a></h1>
 
       <div className="flex justify-between items-center gap-3 sm:hidden">
-
-      <a href="/user" className="text-2xl"><FontAwesomeIcon icon={faUser} /></a>
-
+        <a href="/user" className="text-2xl"><FontAwesomeIcon icon={faUser} /></a>
         <a href="/basket" className="text-2xl"><FontAwesomeIcon icon={faCartShopping} /></a>
-        
         <button id="mobile-hamburger" className="text-2xl sm:hidden">
-        <FontAwesomeIcon icon={faBars}  /></button>
-        
+          <FontAwesomeIcon icon={faBars}  />
+        </button>
       </div>
 
       <div className='sm:flex flex-row gap-1 py-4 px-8 hidden'>
-        <input type="text" placeholder='Search' className='px-6 py-3 border-2 sm:hidden lg:flex rounded border-[#e1e2ea]'></input>
-        <select name="searchcategory" id="category" className='px-6 py-3 border-2 sm:hidden lg:flex rounded border-[#e1e2ea]'><option value="All">All</option><option value="Off">Off</option><option value="On">On</option></select>
-        <button className="button-std sm:flex"><FontAwesomeIcon icon={faSearch} /></button>
+        <input type="text" placeholder='Search' className='px-6 py-3 border-2 sm:hidden lg:flex rounded border-[#e1e2ea]'>
+        </input>
+        <select name="searchcategory" id="category" className='px-6 py-3 border-2 sm:hidden lg:flex rounded border-[#e1e2ea]'>
+          <option value="All">All</option>
+          <option value="Off">Off</option>
+          <option value="On">On</option>
+        </select>
+        <button className="button-std sm:flex"><FontAwesomeIcon icon={faSearch} />
+        </button>
       </div>
       
       <div className="sm:flex hidden gap-11 p-4 items-center">
@@ -43,7 +45,7 @@ function App() {
       </div>
       
     
-     </section>
+    </section>
 
       <div className='flex flex-col sm:hidden gap-1 mt-10 '>
         <input type="text" placeholder='Search' className='px-6 py-3 border-2  rounded border-[#e1e2ea]'></input>
@@ -51,7 +53,7 @@ function App() {
         <button className="button-std "><FontAwesomeIcon icon={faSearch} /></button>
       </div>
       
-      <nav className="sm:flex gap-4 hidden ">
+      <nav className="sm:flex gap-5 hidden text-textPapayas-gray md:pl-8">
         <a href="/">Home</a>
         <a href="/shop">Shop</a>
         <a href="/about">About</a>
@@ -59,8 +61,44 @@ function App() {
       </nav>
 </header>
 <body>
+  <main className='bg-[#FAFAFA]'>
+    <h3>EDITOR’S PICK</h3>
+    <p className="text-textPapayas-black">
+      Problems trying to resolve the conflict between{" "}
+    </p>
+    <div className="flex flex-wrap w-80  mx-auto mt-20 md:justify-between">
+        {ShopCardAData().map((item, index) => (
+          <div key={index} className="">
+            <img
+              src={item.picture}
+              alt="shopCardPicture"
+              className=" flex flex-wrap"
+            ></img>
+            <h5 className="font-bold"> {item.title}</h5>
+            <div />
+          </div>
+        ))}
+      </div>
+  </main>
 
-
+  <main>
+  <div className="flex flex-wrap mobile:w-[20rem] mx-auto mobile:mx-0 mt-20 justify-center">
+        {ShopCardBData().map((item, index) => (
+          <div key={index} className="max-w-[400px]">
+            <img
+              src={item.picture}
+              alt="shopCardPicture"
+              className=" flex flex-row justify-center items-center"
+            ></img>
+            <h5 className="font-bold"> Graphic {item.title}</h5>
+            <h6>{item.description}</h6>
+            <h5>{item.price1}</h5>
+            <h5>{item.price2}</h5>
+            <div />
+          </div>
+        ))}
+      </div>
+  </main>
   
 </body>
 
