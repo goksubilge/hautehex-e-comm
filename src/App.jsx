@@ -64,53 +64,56 @@ function App() {
   
 </body>
 
-<footer className="sm:w-full flex flex-col items-center">
-      <section className="flex my-0 gap-8 py-20">
-        <nav className="display:column gap-4 fill-mainSpace-blue" aria-label="footer-nav">
-          <h3>Get In Touch</h3>
-          <p className=" text-textPapayas-black text-sm">
-            the quick fox jumps over the lazy dog
-          </p>
-          <a href="/pages">
-           <FontAwesomeIcon icon={faFacebook} />
-          </a>
-          <a href="/pages">
-           <FontAwesomeIcon icon={faInstagram} />
-          </a>
-          <a href="/pages">
-           <FontAwesomeIcon icon={faSquareXTwitter} />
-          </a>
-        </nav>
-        
-        <nav className="col gap-3" aria-label="footer-nav">
-          <h3>Company Info</h3>
-          <a>About Us</a>
-          <a>Carrier</a>
-          <a>We are hiring</a>
-          <a>Blog</a>
-        </nav>
-       
-        <nav className=" gap-3" aria-label="footer-nav">
-          <h3>Features</h3>
-          <a>Business Marketing</a>
-          <a>User Analytic</a>
-          <a>Live Chat</a>
-          <a>Unlimited Support</a>
-        </nav>
+<footer className="sm:w-full flex flex-col ">
+    <section className="flex flex-wrap justify-between my-0 gap-8 py-20 p-48 ">
+      <div className='gap-3'>
+        <h3 className='min-w-max' >Get In Touch</h3>
+        <p className=" text-textPapayas-black text-sm min-w-max  ">
+            the quick fox jumps over the <span className="block text-mainSpace-blue">lazy dog</span>
+        </p>
 
-        <nav className=" gap-3" aria-label="footer-nav">
-          <h3>Resources</h3>
-          <a>IOS & Android</a>
-          <a>Watch a Demo</a>
-          <a>Customers</a>
-          <a>API</a>
+        <nav className="flex flex-row gap-3" aria-label="footer-nav">
+          <a href="/pages" className='text-2xl'>
+            <FontAwesomeIcon icon={faFacebook} />
+          </a>
+          <a href="/pages" className='text-2xl'>
+            <FontAwesomeIcon icon={faInstagram} />
+          </a>
+          <a href="/pages" className='text-2xl'>
+            <FontAwesomeIcon icon={faSquareXTwitter} />
+          </a>
         </nav>
-
-      </section>
-
-      <div className=" bg-[#FAFAFA] pb-6">
-        <h6>Made With Love By Finland All Right Reserved</h6>
       </div>
+        
+      <nav className="flex flex-col items-start gap-3" aria-label="footer-nav">
+        <h3 className='min-w-max'>Company Info</h3>
+        <a href="/pages">About Us</a>
+        <a href="/pages">Carrier</a>
+        <a href="/pages">We are hiring</a>
+        <a href="/pages">Blog</a>
+      </nav>
+       
+      <nav className="flex flex-col items-start gap-3" aria-label="footer-nav">
+        <h3 >Features</h3>
+        <a>Business Marketing</a>
+        <a>User Analytic</a>
+        <a>Live Chat</a>
+        <a href='tel:444 0 444' >Unlimited Support</a>
+      </nav>
+
+      <nav className="flex flex-col items-start gap-3" aria-label="footer-nav">
+        <h3 >Resources</h3>
+        <a>IOS & Android</a>
+        <a>Watch a Demo</a>
+        <a>Customers</a>
+        <a>API</a>
+      </nav>
+
+    </section>
+
+    <div className="min-w-full bg-[#FAFAFA] pb-6">
+      <h6>Made With Love By Finland All Right Reserved</h6>
+    </div>
 
  </footer>
     </>
