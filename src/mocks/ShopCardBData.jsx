@@ -1,11 +1,10 @@
-import shopCardBTwo1 from "/images/shopCardBTwo1.jpg";
-import shopCardBTwo2 from "/images/shopCardBTwo2.jpg";
-import shopCardBTwo3 from "/images/shopCardBTwo3.jpg";
-import shopCardBTwo4 from "/images/shopCardBTwo4.jpg";
-import shopCardBTwo5 from "/images/shopCardBTwo5.jpg";
-import shopCardBTwo6 from "/images/shopCardBTwo6.jpg";
-import shopCardBTwo7 from "/images/shopCardBTwo7.jpg";
-import shopCardBTwo8 from "/images/shopCardBTwo8.jpg";
+import shopCardBTwo1 from "/images/shopCardBTwo1.jpeg";
+import shopCardBTwo2 from "/images/shopCardBTwo2.jpeg";
+import shopCardBTwo3 from "/images/shopCardBTwo3.jpeg";
+import shopCardBTwo4 from "/images/shopCardBTwo4.jpeg";
+import shopCardBTwo5 from "/images/shopCardBTwo5.jpeg";
+import shopCardBTwo6 from "/images/shopCardBTwo6.jpeg";
+import shopCardBTwo7 from "/images/shopCardBTwo7.jpeg";
 
 const ShopCardBData = () => {
   return [
@@ -74,7 +73,7 @@ const ShopCardBData = () => {
     },
     {
       id: 7,
-      picture: shopCardBTwo8,
+      picture: shopCardBTwo7,
       title: "Graphic Design",
       description: "English Department",
       emptyInfo: ["react", "redux", "axios"],
