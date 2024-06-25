@@ -1,7 +1,7 @@
-import shopCardAOne1 from '/images/shopCardAOne1.jpg';
-import shopCardAOne2 from '/images/shopCardAOne2.png';
-import shopCardAOne3 from '/images/shopCardAOne3.jpg';
-import shopCardAOne4 from '/images/shopCardAOne4.jpg';
+import shopCardAOne1 from '/images/shopCardAOne1.jpeg';
+import shopCardAOne2 from '/images/shopCardAOne2.jpeg';
+import shopCardAOne3 from '/images/shopCardAOne3.jpeg';
+import shopCardAOne4 from '/images/shopCardAOne4.jpeg';
 
 const ShopCardAData = () => {
   return [
