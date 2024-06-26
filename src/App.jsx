@@ -14,6 +14,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import ShopCardAData from "./mocks/ShopCardAData";
 import ShopCardBData from "./mocks/ShopCardBData";
+import SliderData from "./mocks/SliderData";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Scrollbar } from "swiper/modules";
 import "swiper/css/navigation";
@@ -121,15 +122,11 @@ function App() {
             onSlideChange={() => console.log("slide change")}
             onSwiper={(swiper) => console.log(swiper)}
           >
-            <SwiperSlide>
-              <img src="../images/shopHeroProductSlide1.jpeg" alt="Nigga" />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src="../images/shopHeroProductSlide2.jpeg" alt="Nigga" />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src="../images/shopHeroProductSlide3.jpeg" alt="Nigga" />
-            </SwiperSlide>
+            {SliderData().map((item, index) => (
+              <SwiperSlide key={index}>
+                <img src={item.picture} alt="A Hero Picture" />
+              </SwiperSlide>
+            ))}
           </Swiper>
         </main>
         <main>
