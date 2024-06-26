@@ -1,4 +1,5 @@
 import "./App.css";
+import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faCartShopping,
@@ -13,6 +14,11 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import ShopCardAData from "./mocks/ShopCardAData";
 import ShopCardBData from "./mocks/ShopCardBData";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Scrollbar } from "swiper/modules";
+import "swiper/css/navigation";
+import "swiper/css/scrollbar";
+import "swiper/css";
 
 function App() {
   return (
@@ -99,16 +105,44 @@ function App() {
       </header>
       <body>
         <main>
+          <Swiper
+            scrollbar={{
+              hide: false,
+            }}
+            slidesPerView={1}
+            spaceBetween={30}
+            loop={true}
+            pagination={{
+              clickable: true,
+            }}
+            navigation={true}
+            modules={[Navigation, Scrollbar]}
+            className="mySwiper"
+            onSlideChange={() => console.log("slide change")}
+            onSwiper={(swiper) => console.log(swiper)}
+          >
+            <SwiperSlide>
+              <img src="../images/shopHeroProductSlide1.jpeg" alt="Nigga" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src="../images/shopHeroProductSlide2.jpeg" alt="Nigga" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src="../images/shopHeroProductSlide3.jpeg" alt="Nigga" />
+            </SwiperSlide>
+          </Swiper>
+        </main>
+        <main>
           <section
             className="bg-[#FAFAFA] px-10 py-20"
             aria-label="editors-pick-section"
           >
             <div
-              className="flex flex-col items-center"
+              className="flex flex-col items-center gap-3 "
               aria-label="editors-pick-title"
             >
               <h3>EDITOR’S PICK</h3>
-              <p className="text-textPapayas-black">
+              <p className="text-textPapayas-white max-w-[190px]">
                 Problems trying to resolve the conflict between
               </p>
             </div>
@@ -128,7 +162,6 @@ function App() {
               ))}
             </div>
           </section>
-
           <section aria-label="bestseller-products-section">
             <div className="flex flex-wrap mobile:w-[20rem] mx-auto mobile:mx-0 mt-20 justify-center gap-6">
               {ShopCardBData().map((item, index) => (
@@ -213,7 +246,7 @@ function App() {
           </nav>
         </section>
 
-        <div className="min-w-full bg-[#FAFAFA] pb-6">
+        <div className="min-w-full text-center bg-[#FAFAFA] pb-6">
           <h6>Made With Love By Finland All Right Reserved</h6>
         </div>
       </footer>
