@@ -1,16 +1,16 @@
-import shopCardBTwo1 from "/images/shopCardBTwo1.jpeg";
-import shopCardBTwo2 from "/images/shopCardBTwo2.jpeg";
-import shopCardBTwo3 from "/images/shopCardBTwo3.jpeg";
-import shopCardBTwo4 from "/images/shopCardBTwo4.jpeg";
-import shopCardBTwo5 from "/images/shopCardBTwo5.jpeg";
-import shopCardBTwo6 from "/images/shopCardBTwo6.jpeg";
-import shopCardBTwo7 from "/images/shopCardBTwo7.jpeg";
+import ProductCardAOne1 from "/images/ProductCardAOne1.jpeg";
+import ProductCardAOne2 from "/images/ProductCardAOne2.jpeg";
+import ProductCardAOne3 from "/images/ProductCardAOne3.jpeg";
+import ProductCardAOne4 from "/images/ProductCardAOne4.jpeg";
+import ProductCardAOne5 from "/images/ProductCardAOne5.jpeg";
+import ProductCardAOne6 from "/images/ProductCardAOne6.jpeg";
+import ProductCardAOne7 from "/images/ProductCardAOne7.jpeg";
 
-const ShopCardBData = () => {
+const ProductCardAData = () => {
   return [
     {
       id: 0,
-      picture: shopCardBTwo1,
+      picture: ProductCardAOne1,
       title: "Graphic Design",
       description: "English Department",
       emptyInfo: ["react", "redux", "axios"],
@@ -19,7 +19,7 @@ const ShopCardBData = () => {
     },
     {
       id: 1,
-      picture: shopCardBTwo2,
+      picture: ProductCardAOne2,
       title: "Graphic Design",
       description: "English Department",
       emptyInfo: ["react", "redux", "axios"],
@@ -28,7 +28,7 @@ const ShopCardBData = () => {
     },
     {
       id: 2,
-      picture: shopCardBTwo3,
+      picture: ProductCardAOne3,
       title: "Graphic Design",
       description: "English Department",
       emptyInfo: ["react", "redux", "axios"],
@@ -37,7 +37,7 @@ const ShopCardBData = () => {
     },
     {
       id: 3,
-      picture: shopCardBTwo4,
+      picture: ProductCardAOne4,
       title: "Graphic Design",
       description: "English Department",
       emptyInfo: ["react", "redux", "axios"],
@@ -46,7 +46,7 @@ const ShopCardBData = () => {
     },
     {
       id: 4,
-      picture: shopCardBTwo5,
+      picture: ProductCardAOne5,
       title: "Graphic Design",
       description: "English Department",
       emptyInfo: ["react", "redux", "axios"],
@@ -55,7 +55,7 @@ const ShopCardBData = () => {
     },
     {
       id: 5,
-      picture: shopCardBTwo6,
+      picture: ProductCardAOne6,
       title: "Graphic Design",
       description: "English Department",
       emptyInfo: ["react", "redux", "axios"],
@@ -64,7 +64,7 @@ const ShopCardBData = () => {
     },
     {
       id: 6,
-      picture: shopCardBTwo7,
+      picture: ProductCardAOne7,
       title: "Graphic Design",
       description: "English Department",
       emptyInfo: ["react", "redux", "axios"],
@@ -73,7 +73,7 @@ const ShopCardBData = () => {
     },
     {
       id: 7,
-      picture: shopCardBTwo7,
+      picture: ProductCardAOne7,
       title: "Graphic Design",
       description: "English Department",
       emptyInfo: ["react", "redux", "axios"],
@@ -83,4 +83,4 @@ const ShopCardBData = () => {
   ];
 };
 
-export default ShopCardBData;
+export default ProductCardAData;
