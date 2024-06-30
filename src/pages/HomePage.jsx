@@ -3,6 +3,8 @@ import Slider from "../components/Slider";
 import ShopCardAOne from "../components/ShopCardAOne";
 import ProductCardAOne from "../components/ProductCardAOne";
 import Clients from "../components/Clients";
+import SliderTwo from "../components/SliderTwo";
+import Fluid from "../components/Fluid";
 import Footer from "../layout/Footer";
 
 function HomePage() {
@@ -13,6 +15,8 @@ function HomePage() {
       <ShopCardAOne />
       <ProductCardAOne />
       <Clients />
+      <SliderTwo />
+      <Fluid />
       <Footer />
     </div>
   );

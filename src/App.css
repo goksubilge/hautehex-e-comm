@@ -7,14 +7,27 @@
   @apply bg-mainSpace-blue;
   @apply text-textPapayas-white;
   @apply px-10 py-4;
+  @apply rounded-md;
+  @apply font-bold;
+}
+
+.button-std-reverse{
+  @apply text-mainSpace-blue;
+  @apply bg-textPapayas-white;
+  @apply px-10 py-4;
   @apply rounded;
   @apply font-bold;
+  @apply border-2 border-mainSpace-blue;
 }
 
 .container {
   @apply max-w-full mx-0 my-auto;
 }
 
+.button-product-colors {
+  @apply w-4 h-4;
+  @apply rounded-full;
+}
 
 .logo {
   height: 6em;
