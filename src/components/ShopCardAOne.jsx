@@ -12,7 +12,7 @@ function ShopCardAOne() {
           aria-label="editors-pick-title"
         >
           <h3>EDITOR’S PICK</h3>
-          <p className="text-textPapayas-white max-w-[190px] md:max-w-auto">
+          <p className="text-mainSpace-grey text-center max-w-[190px] md:max-w-auto">
             Problems trying to resolve the conflict between
           </p>
         </div>

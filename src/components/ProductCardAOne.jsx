@@ -2,15 +2,21 @@ import ProductCardAData from "../mocks/ProductCardAData";
 
 function ProductCardAOne() {
   return (
-    <section aria-label="bestseller-products-section">
-      <div>
-        <h4 className="text-papayas-textgray">Featured Products</h4>
+    <section
+      className="bg-[#FAFAFA] px-10 py-20"
+      aria-label="bestseller-products-section"
+    >
+      <div
+        className="flex flex-col text-center gap-3 max-w-52"
+        aria-label="editors-pick-title"
+      >
+        <h4 className="text-mainSpace-grey">Featured Products</h4>
         <h3>BESTSELLER PRODUCTS</h3>
-        <p className="text-papayas-textgray">
+        <p className="text-mainSpace-grey">
           Problems trying to resolve the conflict between{" "}
         </p>
       </div>
-      <div className="flex flex-wrap mobile:w-[20rem] mx-auto mobile:mx-0 mt-20 justify-center gap-6">
+      <div className="flex flex-wrap mt-20 justify-center gap-6">
         {ProductCardAData().map((item, index) => (
           <div key={index} className="max-w-[400px] mt-4">
             <img
