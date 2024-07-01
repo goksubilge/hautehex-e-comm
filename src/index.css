@@ -28,10 +28,7 @@
     @apply text-textPapayas-black;
     @apply font-bold;
   }
-  a {
-    @apply text-sm;
-    @apply font-bold;
-  }
+
   li{
     @apply text-sm;
     @apply text-textPapayas-black;

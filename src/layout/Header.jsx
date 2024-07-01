@@ -1,3 +1,4 @@
+import { Link, NavLink } from "react-router-dom";
 import {
   faCartShopping,
   faUser,
@@ -10,19 +11,17 @@ function Header() {
   return (
     <header className="p-6 top-0 z-10 lg:sticky">
       <section className="max-w-7xl mx-auto p-8   flex justify-between items-center">
-        <h1>
-          <a href="/" className="text-[58px]">
-            HauteHex
-          </a>
-        </h1>
+        <Link to="/">
+          <h1 className="text-[58px]">HauteHex</h1>
+        </Link>
 
         <div className="flex justify-between items-center gap-3 sm:hidden">
-          <a href="/user" className="text-2xl">
-            <FontAwesomeIcon icon={faUser} />
-          </a>
-          <a href="/basket" className="text-2xl">
-            <FontAwesomeIcon icon={faCartShopping} />
-          </a>
+          <Link to="/user">
+            <FontAwesomeIcon icon={faUser} className="text-2xl" />
+          </Link>
+          <Link to="/basket">
+            <FontAwesomeIcon icon={faCartShopping} className="text-2xl" />
+          </Link>
           <button id="mobile-hamburger" className="text-2xl sm:hidden">
             <FontAwesomeIcon icon={faBars} />
           </button>
@@ -78,14 +77,16 @@ function Header() {
         </button>
       </div>
 
-      <nav className="sm:flex gap-5 hidden text-mainSpace-grey md:pl-8">
-        <a href="/">Home</a>
-        <a href="/shop">Shop</a>
-        <a href="/about">About</a>
-        <a href="/blog">Contact</a>
+      <nav className="sm:gap-5 text-mainSpace-grey md:pl-8 sm:flex-row flex flex-col items-center gap-8 py-14 font-bold text-3xl leading-10  tracking-widest">
+        <NavLink exact to="/">
+          Home
+        </NavLink>
+        <NavLink to="/shop">Shop</NavLink>
+        <NavLink to="/blog">Blog</NavLink>
+        <NavLink to="/about">About</NavLink>
+        <NavLink to="/contact">Contact</NavLink>
       </nav>
     </header>
   );
 }
-
 export default Header;
