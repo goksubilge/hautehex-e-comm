@@ -5,6 +5,7 @@ import ProductCardAOne from "../components/ProductCardAOne";
 import Clients from "../components/Clients";
 import SliderTwo from "../components/SliderTwo";
 import Fluid from "../components/Fluid";
+import Blog from "../components/Blog";
 import Footer from "../layout/Footer";
 
 function HomePage() {
@@ -17,6 +18,7 @@ function HomePage() {
       <Clients />
       <SliderTwo />
       <Fluid />
+      <Blog />
       <Footer />
     </div>
   );
