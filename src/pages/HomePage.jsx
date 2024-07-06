@@ -1,12 +1,13 @@
 import Header from "../layout/Header";
-import Slider from "../components/Slider";
+
 import ShopCardAOne from "../components/ShopCardAOne";
 import ProductCardAOne from "../components/ProductCardAOne";
 import Clients from "../components/Clients";
-import SliderTwo from "../components/SliderTwo";
+
 import Fluid from "../components/Fluid";
-import Blog from "../components/Blog";
+import Highlights from "../components/HighLights";
 import Footer from "../layout/Footer";
+import Slider from "../components/Slider";
 
 function HomePage() {
   return (
@@ -16,9 +17,8 @@ function HomePage() {
       <ShopCardAOne />
       <ProductCardAOne />
       <Clients />
-      <SliderTwo />
       <Fluid />
-      <Blog />
+      <Highlights />
       <Footer />
     </div>
   );

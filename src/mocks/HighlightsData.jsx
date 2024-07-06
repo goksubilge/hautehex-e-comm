@@ -1,7 +1,7 @@
 import BlogOne1 from "/images/BlogOne1.jpeg";
 import BlogOne2 from "/images/BlogOne2.jpeg";
 import BlogOne3 from "/images/BlogOne3.jpeg";
-const Slider = () => {
+const HighlightsData = () => {
   return [
     {
       id: 0,
@@ -39,4 +39,4 @@ const Slider = () => {
   ];
 };
 
-export default Slider;
+export default HighlightsData;
