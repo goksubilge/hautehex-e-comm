@@ -3,7 +3,7 @@ import ProductCardAData from "../mocks/ProductCardAData";
 function ProductCardAOne() {
   return (
     <section
-      className="bg-[#FAFAFA] px-10 py-20"
+      className="flex flex-col items-center bg-[#FAFAFA] px-10 py-20"
       aria-label="bestseller-products-section"
     >
       <div
@@ -28,12 +28,10 @@ function ProductCardAOne() {
             <div className="flex flex-col items-center gap-3 m-6 mb-9">
               <h5 className="font-bold">{item.title}</h5>
               <h6>{item.description}</h6>
-              <h5 className="text-textPapayas-beige">
-                {item.price1}
-                <span className="text-textPapayas-white mx-2">
-                  {item.price2}
-                </span>
-              </h5>
+              <div className="flex flex-row gap-2">
+                <div className="text-[#F7DBA7] line-through">{item.price1}</div>
+                <div className="text-[#9CAFB7] ">{item.price2}</div>
+              </div>
               <div className="flex flex-row gap-2 ">
                 <button className="bg-[#FCA311] button-product-colors"></button>
                 <button className="bg-[#47AD97] button-product-colors"></button>
