@@ -14,7 +14,6 @@ function Highlights() {
         aria-label="editors-pick-title"
       >
         <h6 className="text-mainSpace-blue">Practice Advise</h6>
-        <h4 className="text-mainSpace-grey">Featured Products</h4>
         <h3>Featured Products</h3>
         <p className="text-mainSpace-grey">
           Problems trying to resolve the conflict between two major
@@ -50,7 +49,7 @@ function Highlights() {
                   icon={faClock}
                   fade
                   size="sm"
-                  style={{ color: "#4a4e69" }}
+                  style={{ color: "#4A4E69" }}
                 />
                 22 April 2021
               </p>
@@ -59,7 +58,7 @@ function Highlights() {
                   icon={faChartLine}
                   fade
                   size="sm"
-                  style={{ color: "#4a4e69" }}
+                  style={{ color: "#4A4E69" }}
                 />
                 10 comments
               </p>
@@ -69,7 +68,7 @@ function Highlights() {
               <FontAwesomeIcon
                 icon={faAngleRight}
                 size="lg"
-                style={{ color: "#4a4e69" }}
+                style={{ color: "#4A4E69" }}
               />
             </div>
           </div>

@@ -17,13 +17,21 @@ function Header() {
 
         <div className="flex justify-between items-center gap-3 sm:hidden">
           <Link to="/user">
-            <FontAwesomeIcon icon={faUser} className="text-2xl" />
+            <FontAwesomeIcon
+              icon={faUser}
+              style={{ color: "#4A4E69" }}
+              className="text-2xl"
+            />
           </Link>
           <Link to="/basket">
-            <FontAwesomeIcon icon={faCartShopping} className="text-2xl" />
+            <FontAwesomeIcon
+              icon={faCartShopping}
+              style={{ color: "#4A4E69" }}
+              className="text-2xl"
+            />
           </Link>
           <button id="mobile-hamburger" className="text-2xl sm:hidden">
-            <FontAwesomeIcon icon={faBars} />
+            <FontAwesomeIcon icon={faBars} style={{ color: "#4A4E69" }} />
           </button>
         </div>
 
@@ -81,7 +89,7 @@ function Header() {
         <NavLink exact to="/">
           Home
         </NavLink>
-        <NavLink to="/shop">Shop</NavLink>
+        <NavLink to="#ShopCardAOne">Shop</NavLink>
         <NavLink to="/blog">Blog</NavLink>
         <NavLink to="/about">About</NavLink>
         <NavLink to="/contact">Contact</NavLink>

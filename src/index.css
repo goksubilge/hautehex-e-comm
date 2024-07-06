@@ -6,7 +6,7 @@
   h1 {
     @apply text-[58px];
     @apply font-bold;
-    @apply text-textPapayas-black
+    @apply text-clue-moonstone;
   }
   h2 {
     @apply text-[40px];

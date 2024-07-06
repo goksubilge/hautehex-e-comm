@@ -18,8 +18,8 @@ const SliderData = () => {
       title: "NEW COLLECTION",
       alt: "Slide 1",
       description:
-        "We know how large objects will act, We know how are objects will act, We know",
-      button: "Shop Now",
+        "We know how large objects will act, but things on a small scale.",
+      button: "SHOP NOW",
       price1: "$6.14",
     },
     {

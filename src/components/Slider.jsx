@@ -30,18 +30,19 @@ function Slider() {
         {slides.map((slide, index) => (
           <div
             key={index}
-            className="w-full max-h-[calc(100vh-208px)] min-h-[500px] flex-shrink-0"
-            style={{ display: index === currentSlide ? "block" : "none" }}
+            className="w-full max-h-[calc(100vh-208px)] min-h-[500px] flex-shrink-0 relative"
           >
             <img
               src={slide.picture}
               alt={slide.alt}
-              className="w-full min-h-[750px] aspect-video object-cover"
+              className="w-full min-h-[750px] object-cover"
             />
-            <div>
-              <h2>{slide.title}</h2>
-              <p>{slide.description}</p>
-              <button>{slide.button}</button>
+            <div className="absolute flex flex-col gap-8 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center text-2xl sm:text-3xl md:text-4xl lg:text-5xl">
+              <h2 className="text-textPapayas-gray ">{slide.title}</h2>
+              <p className="text-textPapayas-gray  mx-auto">
+                {slide.description}
+              </p>
+              <button className="button-std">{slide.button}</button>
             </div>
           </div>
         ))}
@@ -50,12 +51,14 @@ function Slider() {
         <button onClick={prevSlide}>
           <FontAwesomeIcon
             icon={faChevronLeft}
+            style={{ color: "#4A4E69" }}
             className="text-4xl sm:text-6xl md:text-8xl text-txt-w hover:text-txt-g transition-all"
           />
         </button>
         <button onClick={nextSlide}>
           <FontAwesomeIcon
             icon={faChevronRight}
+            style={{ color: "#4A4E69" }}
             className="text-4xl sm:text-6xl md:text-8xl text-txt-w hover:text-txt-g transition-all"
           />
         </button>
