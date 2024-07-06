@@ -6,6 +6,7 @@ const Slider = () => {
     {
       id: 0,
       picture: BlogOne1,
+      nav: { nav1: "Google", nav2: "Tranding", nav3: "New" },
       title: "Koudetat à la Maison #1 (L'intégrale)",
       description:
         "We focus on ergonomics and meeting you where you work. It's only a keystroke away.",
@@ -16,7 +17,8 @@ const Slider = () => {
     {
       id: 1,
       picture: BlogOne2,
-      title: "Koudetat à la Maison #1 (L'intégrale)",
+      nav: { nav1: "Google", nav2: "Tranding", nav3: "New" },
+      title: "Koudetat à la Maison #2 (L'intégrale)",
       description:
         "We focus on ergonomics and meeting you where you work. It's only a keystroke away.",
       date: "22 April 2021",
@@ -26,7 +28,8 @@ const Slider = () => {
     {
       id: 2,
       picture: BlogOne3,
-      title: "Koudetat à la Maison #1 (L'intégrale)",
+      nav: { nav1: "Google", nav2: "Tranding", nav3: "New" },
+      title: "Koudetat à la Maison #3 (L'intégrale)",
       description:
         "We focus on ergonomics and meeting you where you work. It's only a keystroke away.",
       date: "22 April 2021",
