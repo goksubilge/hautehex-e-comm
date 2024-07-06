@@ -6,7 +6,7 @@ import {
   faChartLine,
 } from "@fortawesome/free-solid-svg-icons";
 
-function Blog() {
+function Highlights() {
   return (
     <div className="flex flex-col justify-between items-center py-20 tracking-normal ">
       <div
@@ -79,4 +79,4 @@ function Blog() {
   );
 }
 
-export default Blog;
+export default Highlights;
