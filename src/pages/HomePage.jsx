@@ -8,6 +8,7 @@ import Fluid from "../components/Fluid";
 import Highlights from "../components/HighLights";
 import Footer from "../layout/Footer";
 import Slider from "../components/Slider";
+import ProductSlider from "../components/ProductSlider";
 
 function HomePage() {
   return (
@@ -16,7 +17,7 @@ function HomePage() {
       <Slider />
       <ShopCardAOne />
       <ProductCardAOne />
-      <Clients />
+      <ProductSlider />
       <Fluid />
       <Highlights />
       <Footer />

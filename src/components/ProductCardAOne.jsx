@@ -18,14 +18,12 @@ function ProductCardAOne() {
       </div>
       <div className="flex flex-wrap mt-20 justify-center gap-6">
         {ProductCardAData().map((item, index) => (
-          <div key={index} className="max-w-[400px] mt-4">
-            <img
-              src={item.picture}
-              alt="shopCardPicture"
-              className=" flex flex-row justify-center items-center mt-8"
-            ></img>
+          <div key={index} className="max-w-60  mt-4">
+            <div className=" min-h-[480px] flex flex-row justify-center items-center mt-8">
+              <img src={item.picture} alt="shopCardPicture"></img>
+            </div>
 
-            <div className="flex flex-col items-center gap-3 m-6 mb-9">
+            <div className="flex flex-col items-center gap-3  mb-9">
               <h5 className="font-bold">{item.title}</h5>
               <h6>{item.description}</h6>
               <div className="flex flex-row gap-2">

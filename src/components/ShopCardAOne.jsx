@@ -11,7 +11,7 @@ function ShopCardAOne() {
           className="flex flex-col items-center gap-3 "
           aria-label="editors-pick-title"
         >
-          <h3>EDITOR’S PICK</h3>
+          <h3 id="shopcardaone">EDITOR’S PICK</h3>
           <p className="text-mainSpace-grey text-center max-w-[190px] md:max-w-auto">
             Problems trying to resolve the conflict between
           </p>

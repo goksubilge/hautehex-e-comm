@@ -21,7 +21,7 @@ function Slider() {
   return (
     <div
       aria-label="slider"
-      className="min-w-[414px] mb-6 mt-20 relative overflow-hidden flex justify-center"
+      className="min-w-[414px] mt-20 relative overflow-hidden flex justify-center"
     >
       <div
         className="flex transition-transform ease-out duration-500"
@@ -30,12 +30,12 @@ function Slider() {
         {slides.map((slide, index) => (
           <div
             key={index}
-            className="w-full max-h-[calc(100vh-208px)] min-h-[500px] flex-shrink-0 relative"
+            className="w-full sm:max-h-[calc(100vh-208px)] min-h-[500px] flex-shrink-0 relative"
           >
             <img
               src={slide.picture}
               alt={slide.alt}
-              className="w-full min-h-[750px] object-cover"
+              className="w-full min-h-[600px] object-cover bg-clue-green"
             />
             <div className="absolute flex flex-col gap-8 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center text-2xl sm:text-3xl md:text-4xl lg:text-5xl">
               <h2 className="text-textPapayas-gray ">{slide.title}</h2>

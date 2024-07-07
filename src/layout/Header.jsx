@@ -9,8 +9,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function Header() {
   return (
-    <header className="p-6 top-0 z-10 lg:sticky">
-      <section className="max-w-7xl mx-auto p-8   flex justify-between items-center">
+    <header className="p-6 top-0 z-30 lg:bg-mainSpace-beige">
+      <section className="py-8 flex justify-between items-center">
         <Link to="/">
           <h1 className="text-[58px]">HauteHex</h1>
         </Link>
@@ -89,7 +89,7 @@ function Header() {
         <NavLink exact to="/">
           Home
         </NavLink>
-        <NavLink to="#ShopCardAOne">Shop</NavLink>
+        <a href="#shopcardaone">Shop</a>
         <NavLink to="/blog">Blog</NavLink>
         <NavLink to="/about">About</NavLink>
         <NavLink to="/contact">Contact</NavLink>

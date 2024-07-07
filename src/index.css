@@ -36,10 +36,6 @@
   }
 }
 
-:root {
-  @apply antialiased font-normal
-}
-
 body {
   @apply min-h-screen bg-textPapayas-white
 }
