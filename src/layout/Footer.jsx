@@ -8,9 +8,9 @@ import { NavLink } from "react-router-dom";
 
 function Footer() {
   return (
-    <footer className="sm:w-full flex flex-col">
-      <section className="flex flex-wrap justify-start my-0 gap-8 py-20 p-48 ">
-        <div className="gap-3">
+    <footer className="w-full flex flex-col justify-center items-center">
+      <section className="max-w-60  sm:max-w-full flex flex-wrap flex-col sm:flex-row justify-center gap-8 py-20">
+        <div className="gap-3 sm:min-w-60">
           <h3 className="min-w-max">Get In Touch</h3>
           <p className=" text-mainSpace-blue text-sm min-w-max my-3">
             the quick fox jumps over the{" "}
@@ -22,7 +22,10 @@ function Footer() {
             </span>
           </p>
 
-          <nav className="flex flex-row gap-3" aria-label="footer-nav">
+          <nav
+            className="flex flex-row gap-3 sm:min-w-60"
+            aria-label="footer-nav"
+          >
             <NavLink to="/pages" className="text-2xl">
               <FontAwesomeIcon icon={faFacebook} />
             </NavLink>
@@ -36,7 +39,7 @@ function Footer() {
         </div>
 
         <nav
-          className="flex flex-col items-start gap-3"
+          className="flex flex-col items-start gap-3 sm:min-w-60"
           aria-label="footer-nav"
         >
           <h3 className="min-w-max">Company Info</h3>
@@ -47,7 +50,7 @@ function Footer() {
         </nav>
 
         <nav
-          className="flex flex-col items-start gap-3"
+          className="flex flex-col items-start gap-3 sm:min-w-60"
           aria-label="footer-nav"
         >
           <h3>Features</h3>
@@ -60,7 +63,7 @@ function Footer() {
         </nav>
 
         <nav
-          className="flex flex-col items-start gap-3"
+          className="flex flex-col items-start gap-3 sm:min-w-60"
           aria-label="footer-nav"
         >
           <h3>Resources</h3>

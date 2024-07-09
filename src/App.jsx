@@ -5,13 +5,11 @@ import HomePage from "./pages/HomePage";
 
 function App() {
   return (
-    <div className="container">
-      <Switch>
-        <Route path="/">
-          <HomePage />
-        </Route>
-      </Switch>
-    </div>
+    <Switch>
+      <Route path="/">
+        <HomePage />
+      </Route>
+    </Switch>
   );
 }
 

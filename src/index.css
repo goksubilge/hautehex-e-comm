@@ -37,5 +37,5 @@
 }
 
 body {
-  @apply min-h-screen bg-textPapayas-white
+  @apply min-h-screen bg-textPapayas-white m-0 min-w-80 flex
 }

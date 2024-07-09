@@ -1,5 +1,5 @@
 #root {
-  @apply antialiased font-normal my-0 mx-auto max-w-7xl
+  @apply antialiased font-normal my-0 mx-auto w-full
 }
 
 .button-std{
@@ -19,18 +19,16 @@
   @apply border-2 border-mainSpace-blue;
 }
 
-.container {
-  @apply max-w-full mx-0 my-auto;
-}
-
 .button-product-colors {
   @apply w-4 h-4;
   @apply rounded-full;
 }
-.hover{
-  @apply hover:text-mainSpace-blue
-}
 
 .active {
   @apply text-mainSpace-blue
+}
+
+.button-std :hover{
+  @apply text-mainSpace-blue bg-mainSpace-beige
+
 }
