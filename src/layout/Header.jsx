@@ -15,7 +15,7 @@ function Header() {
           <h1 className="text-[58px]">HauteHex</h1>
         </Link>
 
-        <div className="flex justify-between items-center gap-3 sm:hidden">
+        <div className="flex justify-between items-center gap-3 md:hidden">
           <Link to="/user">
             <FontAwesomeIcon
               icon={faUser}
@@ -30,42 +30,45 @@ function Header() {
               className="text-2xl"
             />
           </Link>
-          <button id="mobile-hamburger" className="text-2xl sm:hidden">
+          <button id="mobile-hamburger" className="text-2xl md:hidden">
             <FontAwesomeIcon icon={faBars} style={{ color: "#4A4E69" }} />
           </button>
         </div>
 
-        <div className="sm:flex flex-row gap-1 py-4 px-8 hidden">
+        <div className="lg:flex flex-row gap-1 py-4 px-8 sm:px-3 hidden  w-full sm:max-w-[450px] xl:max-w-[650px] justify-center transation-all duration-500          ">
           <input
             type="text"
             placeholder="Search"
-            className="px-6 py-3 border-2 sm:hidden lg:flex rounded border-[#e1e2ea]"
+            className="w-full px-6 py-3 border-2  lg:flex rounded border-[#e1e2ea]"
           ></input>
           <select
             name="searchcategory"
             id="category"
-            className="px-6 py-3 border-2 sm:hidden lg:flex rounded border-[#e1e2ea]"
+            className="w-full px-6 py-3 border-2 lg:flex rounded border-[#e1e2ea]"
           >
             <option value="All">All</option>
             <option value="Off">Off</option>
             <option value="On">On</option>
           </select>
-          <button className="button-std sm:flex">
+          <button className="button-std ">
             <FontAwesomeIcon icon={faSearch} />
           </button>
         </div>
 
-        <div className="sm:flex hidden gap-11 p-4 items-center">
-          <a href="/login" className=" text-base font-bold text-mainSpace-blue">
+        <div className="md:flex hidden  p-4 items-center  transation-all duration-500">
+          <a
+            href="/login"
+            className=" text-base font-bold text-mainSpace-blue pr-11"
+          >
             Login
           </a>
-          <button href="/register" className="button-std min-w-56 ">
+          <button href="/register" className="button-std   min-w-56">
             Become a member
           </button>
         </div>
       </section>
 
-      <div className="flex flex-col sm:hidden gap-1 mt-10 ">
+      <div className="flex flex-col lg:hidden gap-1 mt-10 ">
         <input
           type="text"
           placeholder="Search"
@@ -85,7 +88,7 @@ function Header() {
         </button>
       </div>
 
-      <nav className="sm:gap-5 text-mainSpace-grey md:pl-8 sm:flex-row flex flex-col items-center gap-8 py-14 font-bold text-3xl leading-10  tracking-widest">
+      <nav className="sm:gap-5 text-mainSpace-grey md:pl-8 sm:flex-row lg:flex flex-col items-center gap-8 py-14 font-bold text-3xl leading-10  tracking-widest hidden">
         <NavLink exact to="/">
           Home
         </NavLink>
