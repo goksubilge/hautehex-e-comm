@@ -19,13 +19,11 @@ function ProductCardAOne() {
       <div className="flex flex-wrap mt-20 justify-center gap-6  max-w-6xl">
         {ProductCardAData().map((item, index) => (
           <div key={index} className="max-w-60">
-            <div>
-              <img
-                src={item.picture}
-                className="w-60 h-[427px] object-cover"
-                alt="shopCardPicture"
-              ></img>
-            </div>
+            <img
+              src={item.picture}
+              className="w-60 h-[427px] object-cover"
+              alt="shopCardPicture"
+            ></img>
 
             <div className="flex flex-col items-center gap-3 px-6 pt-6 pb-9">
               <h5 className="font-bold">{item.title}</h5>

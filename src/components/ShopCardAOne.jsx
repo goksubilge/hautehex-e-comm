@@ -1,4 +1,3 @@
-import ShopCardAData from "../mocks/ShopCardAData";
 import shopCardAOne1 from "/images/shopCardAOne1.jpeg";
 import shopCardAOne2 from "/images/shopCardAOne2.jpeg";
 import shopCardAOne3 from "/images/shopCardAOne3.jpeg";
@@ -19,17 +18,6 @@ function ShopCardAOne() {
           Problems trying to resolve the conflict between
         </p>
       </div>
-      {/*       <div className="flex flex-wrap w-80  mx-auto mt-20 md:justify-between gap-8">
-        {ShopCardAData().map((item, index) => (
-          <div key={index} className="relative ">
-            <img src={item.picture} alt="shopCardPicture" ></img>
-            <h5 className="absolute font-bold max-w-auto text-center px-5 leading-10 z-10 bottom-4 left-8  bg-textPapayas-white">
-              {item.title}
-            </h5>
-            <div />
-          </div>
-        ))}
-      </div> */}
       <div
         aria-label="editors-pick-cards"
         className="flex flex-wrap gap-4 justify-center "

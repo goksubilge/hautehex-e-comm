@@ -38,12 +38,14 @@ function ProductSlider() {
               <p className="text-textPapayas-gray min-w-min   ">
                 {slide.description}
               </p>
-              <p className="text-textPapayas-gray mx-auto -mb-3">
-                {slide.price1}
-              </p>
-              <button className="button-std text-sm h-fit w-fit ">
-                {slide.button}
-              </button>
+              <div className="flex flex-col justify-between items-center gap-7 md:flex-row">
+                <p className="text-textPapayas-gray mx-auto -mb-3">
+                  {slide.price1}
+                </p>
+                <button className="button-std text-sm h-fit w-fit ">
+                  {slide.button}
+                </button>
+              </div>
             </div>
             <div className=" absolute max-h-[550px] overflow-hidden ">
               <img
