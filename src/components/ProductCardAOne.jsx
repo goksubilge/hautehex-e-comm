@@ -7,23 +7,27 @@ function ProductCardAOne() {
       aria-label="bestseller-products-section"
     >
       <div
-        className="flex flex-col text-center gap-3 max-w-52"
+        className="flex flex-col text-center gap-3 max-w-52 md:max-w-full"
         aria-label="editors-pick-title"
       >
         <h4 className="text-mainSpace-grey">Featured Products</h4>
         <h3>BESTSELLER PRODUCTS</h3>
         <p className="text-mainSpace-grey">
-          Problems trying to resolve the conflict between{" "}
+          Problems trying to resolve the conflict between
         </p>
       </div>
-      <div className="flex flex-wrap mt-20 justify-center gap-6">
+      <div className="flex flex-wrap mt-20 justify-center gap-6  max-w-6xl">
         {ProductCardAData().map((item, index) => (
-          <div key={index} className="max-w-60  mt-4">
-            <div className=" min-h-[480px] flex flex-row justify-center items-center mt-8">
-              <img src={item.picture} alt="shopCardPicture"></img>
+          <div key={index} className="max-w-60">
+            <div>
+              <img
+                src={item.picture}
+                className="w-60 h-[427px] object-cover"
+                alt="shopCardPicture"
+              ></img>
             </div>
 
-            <div className="flex flex-col items-center gap-3  mb-9">
+            <div className="flex flex-col items-center gap-3 px-6 pt-6 pb-9">
               <h5 className="font-bold">{item.title}</h5>
               <h6>{item.description}</h6>
               <div className="flex flex-row gap-2">
@@ -36,16 +40,15 @@ function ProductCardAOne() {
                 <button className="bg-[#00A1C1] button-product-colors"></button>
                 <button className="bg-[#B73225] button-product-colors"></button>
               </div>
-              <div />
             </div>
           </div>
         ))}
       </div>
-      <div className="flex justify-center items-center my-20">
+      {/*       <div className="flex justify-center items-center my-20">
         <button className="button-std tracking-[.125em]">
           LOADING PRODUCTS...
         </button>
-      </div>
+      </div> */}
     </section>
   );
 }

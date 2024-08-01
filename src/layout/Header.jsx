@@ -9,7 +9,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function Header() {
   return (
-    <header className="px-6 top-0 z-30 lg:bg-mainSpace-beige">
+    <header className="px-6 top-0 z-30 ">
       <section className="py-8 flex justify-between items-center">
         <Link to="/">
           <h1 className="text-[58px]">HauteHex</h1>
@@ -35,7 +35,7 @@ function Header() {
           </button>
         </div>
 
-        <div className="lg:flex flex-row gap-1 py-4 px-8 sm:px-3 hidden  w-full sm:max-w-[450px] xl:max-w-[650px] justify-center transation-all duration-500          ">
+        <div className="xl:flex flex-row gap-1 py-4 px-8 sm:px-3 hidden w-full sm:max-w-[450px] xl:max-w-[650px] justify-center transation-all duration-500">
           <input
             type="text"
             placeholder="Search"
@@ -68,7 +68,7 @@ function Header() {
         </div>
       </section>
 
-      <div className="flex flex-col lg:hidden gap-1 mt-10 ">
+      <div className="flex flex-col xl:hidden gap-1 mt-10 pb-14">
         <input
           type="text"
           placeholder="Search"
@@ -88,7 +88,7 @@ function Header() {
         </button>
       </div>
 
-      <nav className="md:gap-5 text-mainSpace-grey sm:flex-row lg:flex flex-col items-center gap-8 pt-14 sm:pt-8 font-bold text-3xl leading-10  tracking-widest hidden md:text-sm">
+      <nav className="md:gap-5 text-mainSpace-grey sm:flex-row xl:flex flex-col items-center gap-8 pt-14 sm:pt-8 font-bold text-3xl leading-10  tracking-widest hidden md:text-sm">
         <NavLink exact to="/">
           Home
         </NavLink>

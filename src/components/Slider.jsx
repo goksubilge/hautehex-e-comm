@@ -21,7 +21,7 @@ function Slider() {
   return (
     <div
       aria-label="slider"
-      className="min-w-[414px] mt-20 relative overflow-hidden flex justify-center"
+      className="min-w-[414px] relative overflow-hidden flex justify-center"
     >
       <div
         className="flex transition-transform ease-out duration-500"
@@ -30,14 +30,14 @@ function Slider() {
         {slides.map((slide, index) => (
           <div
             key={index}
-            className="w-full sm:max-h-[calc(100vh-208px)] min-h-[500px] flex-shrink-0 relative"
+            className="w-full sm:max-h-[calc(100vh-204px)] min-h-[500px] flex-shrink-0 relative after:absolute after:top-0 after:left-0 after:w-full after:h-full after:bg-[rgba(0,0,0,0.5)] after:-z-10"
           >
             <img
               src={slide.picture}
               alt={slide.alt}
-              className="w-full min-h-[600px] object-cover bg-clue-green"
+              className="w-full min-h-[600px] object-cover"
             />
-            <div className="absolute flex flex-col gap-8 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center text-2xl sm:text-3xl md:text-4xl lg:text-5xl">
+            <div className="absolute flex flex-col gap-8 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center text-2xl sm:text-3xl md:text-4xl lg:text-5xl z-20 backdrop-filter backdrop-blur-sm bg-[rgba(0,0,0,0.2)] p-6 rounded-xl">
               <h2 className="text-textPapayas-gray ">{slide.title}</h2>
               <p className="text-textPapayas-gray  mx-auto">
                 {slide.description}
@@ -51,15 +51,13 @@ function Slider() {
         <button onClick={prevSlide}>
           <FontAwesomeIcon
             icon={faChevronLeft}
-            style={{ color: "#4A4E69" }}
-            className="text-4xl sm:text-6xl md:text-8xl text-txt-w hover:text-txt-g transition-all"
+            className="text-4xl sm:text-6xl md:text-8xl text-txt-w hover:text-txt-g transition-all text-[#4A4E69] hover:text-[#FFFFFF]"
           />
         </button>
         <button onClick={nextSlide}>
           <FontAwesomeIcon
             icon={faChevronRight}
-            style={{ color: "#4A4E69" }}
-            className="text-4xl sm:text-6xl md:text-8xl text-txt-w hover:text-txt-g transition-all"
+            className="text-4xl sm:text-6xl md:text-8xl text-txt-w hover:text-txt-g transition-all text-[#4A4E69] hover:text-[#FFFFFF]"
           />
         </button>
       </div>

@@ -12,7 +12,7 @@ import ProductSlider from "../components/ProductSlider";
 
 function HomePage() {
   return (
-    <div>
+    <main>
       <Header />
       <Slider />
       <ShopCardAOne />
@@ -21,7 +21,7 @@ function HomePage() {
       <Fluid />
       <Highlights />
       <Footer />
-    </div>
+    </main>
   );
 }
 
