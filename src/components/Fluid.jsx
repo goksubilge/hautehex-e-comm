@@ -2,8 +2,8 @@ import React from "react";
 
 function Fluid() {
   return (
-    <section className="flex flex-col justify-between md:justify-center items-center mt-32 md:mt-0 md:flex-row-reverse">
-      <div className="flex flex-col justify-between items-center md:items-start gap-8 md:min-w-[570px]">
+    <section className="flex flex-col justify-between md:justify-center items-center mt-32 md:mt-0 md:flex-row-reverse gap-24">
+      <div className="flex flex-col justify-between items-center md:items-start gap-8 md:min-w-[380px]">
         <div className="text-center max-w-64 md:max-w-sm md:text-left">
           <h5 className=" text-[#BDBDBD]">SUMMER 2020</h5>
           <h2>Part of the Neural Universe</h2>
@@ -16,10 +16,10 @@ function Fluid() {
           <button className="button-std-reverse">Learn More</button>
         </div>
       </div>
-      <div className="flex items-center md:max-w-[1025px]">
+      <div className="md:max-w-[700px] overflow-hidden">
         <img
           src="../images/Fluid.png"
-          className="md:min-w-[725px] object-cover"
+          className="min-w-[350px] min-h-[350px] md:min-h-[600px] md:min-w-[300px] md:scale-110 object-cover "
           alt="hero"
         />
       </div>
