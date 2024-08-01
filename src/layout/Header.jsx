@@ -9,7 +9,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function Header() {
   return (
-    <header className="p-6 top-0 z-30 lg:bg-mainSpace-beige">
+    <header className="px-6 top-0 z-30 lg:bg-mainSpace-beige">
       <section className="py-8 flex justify-between items-center">
         <Link to="/">
           <h1 className="text-[58px]">HauteHex</h1>
@@ -88,7 +88,7 @@ function Header() {
         </button>
       </div>
 
-      <nav className="sm:gap-5 text-mainSpace-grey md:pl-8 sm:flex-row lg:flex flex-col items-center gap-8 py-14 font-bold text-3xl leading-10  tracking-widest hidden">
+      <nav className="md:gap-5 text-mainSpace-grey sm:flex-row lg:flex flex-col items-center gap-8 pt-14 sm:pt-8 font-bold text-3xl leading-10  tracking-widest hidden md:text-sm">
         <NavLink exact to="/">
           Home
         </NavLink>
