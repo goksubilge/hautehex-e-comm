@@ -11,40 +11,40 @@ function Highlights() {
     <section className="flex flex-col justify-between items-center py-20 md:py-28 tracking-normal">
       <div
         className="flex flex-col text-center gap-3"
-        aria-label="editors-pick-title"
+        aria-label="featured-posts-title"
       >
         <h6 className="text-mainSpace-blue">Practice Advise</h6>
-        <h3>Featured Products</h3>
+        <h3>Featured Posts</h3>
         <p className="text-mainSpace-grey max-w-[190px] md:max-w-full">
           Problems trying to resolve the conflict between two major
         </p>
       </div>
 
       <div className="pt-20">
-        <div className="flex flex-wrap mt-20 justify-center gap-6 max-w-6xl ">
+        <div className="flex flex-wrap justify-center gap-6 max-w-6xl ">
           {HighlightsData().map((item, index) => (
-            <div key={index} className="max-w-60 min-w-min">
+            <div key={index} className="max-w-60 min-w-min shadow-md">
               <div className="w-[330px] md:w-[348px] h-[300px]">
                 <img
                   src={item.picture}
-                  className="object-cover object-center w-full h-full"
+                  className="object-cover w-full h-full"
                   alt="HighLights"
                 ></img>
               </div>
 
-              <nav className="text-sm text-mainSpace-grey leading-1 gap-4 py-6 text-left flex flex-row ">
-                <p href="/" className="hover">
-                  {item.nav.nav1}
-                </p>
-                <p href="/" className="hover">
-                  {item.nav.nav2}
-                </p>
-                <p href="/" className="hover">
-                  {item.nav.nav3}
-                </p>
-              </nav>
+              <div className="px-6 pt-6 pb-9  flex flex-col gap-2">
+                <nav className="text-sm text-mainSpace-grey leading-1 text-left flex flex-row gap-4">
+                  <p href="/" className="hover">
+                    {item.nav.nav1}
+                  </p>
+                  <p href="/" className="hover">
+                    {item.nav.nav2}
+                  </p>
+                  <p href="/" className="hover">
+                    {item.nav.nav3}
+                  </p>
+                </nav>
 
-              <div>
                 <h4>
                   {item.title.title1}
                   <p className="block">{item.title.title2}</p>
@@ -70,7 +70,7 @@ function Highlights() {
                     {item.comments}
                   </p>
                 </div>
-                <div className="inline gap-2 font-bold text-lg text-mainSpace-blue">
+                <div className="inline-flex items-center gap-2 font-bold text-lg text-mainSpace-blue">
                   {item.moreInfo}
                   <FontAwesomeIcon
                     icon={faAngleRight}

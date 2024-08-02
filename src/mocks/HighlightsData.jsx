@@ -8,13 +8,13 @@ const HighlightsData = () => {
       picture: BlogOne1,
       nav: { nav1: "Google", nav2: "Tranding", nav3: "New" },
       title: {
-        title1: "Koudetat à la Maison #1",
+        title1: "Loudetat à la Maison #1",
         title2: "(L 'intégrale)",
       },
       description:
         "We focus on ergonomics and meeting you where you work. It's only a keystroke away.",
       date: "22 April 2021",
-      comments: "10 comments",
+      comments: "11 comments",
       moreInfo: "Learn More",
     },
     {
@@ -22,13 +22,13 @@ const HighlightsData = () => {
       picture: BlogOne2,
       nav: { nav1: "Google", nav2: "Tranding", nav3: "New" },
       title: {
-        title1: "Koudetat à la Maison #1",
+        title1: "Loudetat à la Maison #1",
         title2: "(L 'intégrale)",
       },
       description:
         "We focus on ergonomics and meeting you where you work. It's only a keystroke away.",
-      date: "22 April 2021",
-      comments: "10 comments",
+      date: "12 June 2021",
+      comments: "20 comments",
       moreInfo: "Learn More",
     },
     {
@@ -36,13 +36,13 @@ const HighlightsData = () => {
       picture: BlogOne3,
       nav: { nav1: "Google", nav2: "Tranding", nav3: "New" },
       title: {
-        title1: "Koudetat à la Maison #1",
+        title1: "Loudetat à la Maison #1",
         title2: "(L 'intégrale)",
       },
       description:
         "We focus on ergonomics and meeting you where you work. It's only a keystroke away.",
-      date: "22 April 2021",
-      comments: "10 comments",
+      date: "18 July 2021",
+      comments: "14 comments",
       moreInfo: "Learn More",
     },
   ];
