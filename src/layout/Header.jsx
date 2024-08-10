@@ -88,7 +88,7 @@ function Header() {
         </button>
       </div>
 
-      <nav className="md:gap-5 text-mainSpace-grey sm:flex-row xl:flex flex-col items-center gap-8 pt-14 sm:pt-8 font-bold text-3xl leading-10  tracking-widest hidden md:text-sm">
+      <div className="md:gap-5 text-mainSpace-grey sm:flex-row xl:flex flex-col items-center gap-8 pt-14 sm:pt-8 font-bold text-3xl leading-10  tracking-widest hidden md:text-sm">
         <NavLink exact to="/">
           Home
         </NavLink>
@@ -96,7 +96,7 @@ function Header() {
         <NavLink to="/blog">Blog</NavLink>
         <NavLink to="/about">About</NavLink>
         <NavLink to="/contact">Contact</NavLink>
-      </nav>
+      </div>
     </header>
   );
 }

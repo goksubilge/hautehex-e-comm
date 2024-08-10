@@ -56,7 +56,7 @@ function Highlights() {
                       icon={faClock}
                       fade
                       size="sm"
-                      style={{ color: "#4A4E69" }}
+                      style={{ color: "#4A4E69", marginRight: "5px" }}
                     />
                     {item.date}
                   </p>
@@ -65,7 +65,7 @@ function Highlights() {
                       icon={faChartLine}
                       fade
                       size="sm"
-                      style={{ color: "#4A4E69" }}
+                      style={{ color: "#4A4E69", marginRight: "5px" }}
                     />
                     {item.comments}
                   </p>
@@ -75,7 +75,7 @@ function Highlights() {
                   <FontAwesomeIcon
                     icon={faAngleRight}
                     size="lg"
-                    style={{ color: "#4A4E69" }}
+                    style={{ color: "#4A4E69", marginRight: "5px" }}
                   />
                 </div>
               </div>

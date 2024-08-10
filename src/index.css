@@ -1,16 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
   h1 {
-    @apply text-[58px];
     @apply font-bold;
     @apply text-clue-moonstone;
+    
   }
   h2 {
     @apply text-[40px];
     @apply text-[#252B42];
+    @apply font-bold;
   }
   h3 {
     @apply text-2xl;
