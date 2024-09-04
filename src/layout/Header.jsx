@@ -92,7 +92,7 @@ function Header() {
         <NavLink exact to="/">
           Home
         </NavLink>
-        <a href="#shopcardaone">Shop</a>
+        <NavLink to="/shop">Shop</NavLink>
         <NavLink to="/blog">Blog</NavLink>
         <NavLink to="/about">About</NavLink>
         <NavLink to="/contact">Contact</NavLink>
