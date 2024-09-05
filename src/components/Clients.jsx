@@ -9,14 +9,24 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 function Clients() {
   return (
-    <div className="flex flex-col sm:flex-row sm:flex-wrap sm:justify-between gap-y-14 py-12 my-28">
-      <FontAwesomeIcon icon={faHooli} fixed-width size="7x" />
-      <FontAwesomeIcon icon={faLyft} size="7x" />
-      <FontAwesomeIcon icon={faPiedPiperHat} size="7x" />
-      <FontAwesomeIcon icon={faStripe} size="7x" />
-      <FontAwesomeIcon icon={faAws} size="7x" />
-      <FontAwesomeIcon icon={faRedditAlien} size="7x" />
-    </div>
+    <section className="flex flex-col sm:flex-row sm:flex-wrap sm:justify-between gap-y-14 gap-x-8 px-48 bg-[#FAFAFA]">
+      <FontAwesomeIcon
+        icon={faHooli}
+        fixed-width
+        className="text-[#737373] size-40"
+      />
+      <FontAwesomeIcon icon={faLyft} className="text-[#737373] size-40" />
+      <FontAwesomeIcon
+        icon={faPiedPiperHat}
+        className="text-[#737373] size-40"
+      />
+      <FontAwesomeIcon icon={faStripe} className="text-[#737373] size-40" />
+      <FontAwesomeIcon icon={faAws} className="text-[#737373] size-40" />
+      <FontAwesomeIcon
+        icon={faRedditAlien}
+        className="text-[#737373] size-40"
+      />
+    </section>
   );
 }
 
