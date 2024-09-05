@@ -37,7 +37,7 @@ function Slider() {
               alt={slide.alt}
               className="w-full min-h-[600px] object-cover"
             />
-            <div className="absolute flex flex-col gap-8 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center text-2xl sm:text-3xl md:text-4xl lg:text-5xl z-20 backdrop-filter backdrop-blur-sm bg-[rgba(0,0,0,0.2)] p-6 rounded-xl">
+            <div className="absolute flex flex-col gap-8 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center text-2xl sm:text-3xl md:text-4xl lg:text-5xl z-20 backdrop-filter backdrop-blur-xs bg-[rgba(0,0,0,0.2)] p-6 rounded-xl">
               <h2 className="text-textPapayas-gray ">{slide.title}</h2>
               <p className="text-textPapayas-gray  mx-auto">
                 {slide.description}

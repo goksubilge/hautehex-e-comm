@@ -1,8 +1,4 @@
-import ShopCardBTwo1 from "/images/ShopCardBTwo1.jpeg";
-import ShopCardBTwo2 from "/images/ShopCardBTwo2.jpeg";
-import ShopCardBTwo3 from "/images/ShopCardBTwo3.jpeg";
-import ShopCardBTwo4 from "/images/ShopCardBTwo4.jpeg";
-import ShopCardBTwo5 from "/images/ShopCardBTwo5.jpeg";
+import ShopCardBTwoData from "../mocks/ShopCardBTwoData";
 
 import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -33,83 +29,28 @@ function ShopCardBTwo() {
         aria-label="editors-pick-inner-card"
         className="flex flex-wrap justify-center gap-3"
       >
-        <div aria-label="editors-pick-card" className="relative gap-3">
-          <img
-            className="w-[325px] md:w-[240px] h-[250px] md:h-[244px] object-cover"
-            src={ShopCardBTwo1}
-            alt="Men Photo"
-          />
+        {ShopCardBTwoData().map((item, index) => (
           <div
-            aria-label="editors-pick-card-title"
-            className="absolute bottom-20 left-24 font-bold px-12 py-3 "
+            aria-label="editors-pick-card"
+            key={index}
+            className="relative gap-3"
           >
-            <span className="text-textPapayas-white">
-              CLOTHS<p>5 items</p>
-            </span>
+            <img
+              className="w-[325px] md:w-[240px] h-[250px] md:h-[244px] object-cover "
+              src={item.picture}
+              alt="Photo"
+            />
+            <div
+              aria-label="editors-pick-card-title"
+              className="absolute bottom-20 left-20 md:left-12 md:bottom-16 gap-3 text-center font-bold px-12 py-3 backdrop-filter backdrop-blur-xs bg-[rgba(0,0,0,0.2)] rounded-xl"
+            >
+              <p className="text-textPapayas-white">
+                {item.description}
+                <p>{item.emptyInfo}</p>
+              </p>
+            </div>
           </div>
-        </div>
-
-        <div aria-label="editors-pick-card" className="relative gap-3">
-          <img
-            className="w-[325px] md:w-[240px] h-[250px] md:h-[244px] object-cover"
-            src={ShopCardBTwo2}
-            alt="Women Photo"
-          />
-          <div
-            aria-label="editors-pick-card-title"
-            className="absolute bottom-20 left-24 font-bold px-12 py-3"
-          >
-            <span className="text-textPapayas-white">
-              CLOTHS<p>5 items</p>
-            </span>
-          </div>
-        </div>
-
-        <div aria-label="editors-pick-card" className="relative gap-3">
-          <img
-            className="w-[325px] md:w-[240px] h-[250px] md:h-[244px] object-cover"
-            src={ShopCardBTwo3}
-            alt="Accessories Photo"
-          />
-          <div
-            aria-label="editors-pick-card-title"
-            className="absolute bottom-20 left-24 font-bold px-12 py-3 "
-          >
-            <span className="text-textPapayas-white">
-              CLOTHS<p>5 items</p>
-            </span>
-          </div>
-        </div>
-        <div aria-label="editors-pick-card" className="relative gap-3">
-          <img
-            className="w-[325px] md:w-[240px] h-[250px] md:h-[244px] object-cover"
-            src={ShopCardBTwo4}
-            alt="Kids Photo"
-          />
-          <div
-            aria-label="editors-pick-card-title"
-            className="absolute bottom-20 left-24 font-bold px-12 py-3 "
-          >
-            <span className="text-textPapayas-white">
-              CLOTHS<p>5 items</p>
-            </span>
-          </div>
-        </div>
-        <div aria-label="editors-pick-card" className="relative gap-3">
-          <img
-            className="w-[325px] md:w-[240px] h-[250px] md:h-[244px] object-cover"
-            src={ShopCardBTwo5}
-            alt="Kids Photo"
-          />
-          <div
-            aria-label="editors-pick-card-title"
-            className="absolute bottom-20 left-24 font-bold px-12 py-3 "
-          >
-            <span className="text-textPapayas-white">
-              CLOTHS<p>5 items</p>
-            </span>
-          </div>
-        </div>
+        ))}
       </div>
     </section>
   );
