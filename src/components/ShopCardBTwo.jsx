@@ -3,10 +3,10 @@ import Bredcrumb from "./Bredcrumb";
 
 function ShopCardBTwo() {
   return (
-    <section className="bg-[#FAFAFA] " aria-label="editors-pick-section">
+    <section className="bg-[#FAFAFA] py-6" aria-label="product-list-section">
       <div
         className="flex flex-col md:flex-row items-center md:justify-between gap-8 py-6 px-36"
-        aria-label="editors-pick-title"
+        aria-label="product-list-title"
       >
         <h3
           id="shopcardbtwo"
@@ -19,12 +19,12 @@ function ShopCardBTwo() {
       </div>
 
       <div
-        aria-label="editors-pick-inner-card"
+        aria-label="product-list-inner-card"
         className="flex flex-wrap justify-center gap-4 px-32"
       >
         {ShopCardBTwoData().map((item, index) => (
           <div
-            aria-label="editors-pick-card"
+            aria-label="product-list-card"
             key={index}
             className="relative gap-3"
           >
@@ -34,7 +34,7 @@ function ShopCardBTwo() {
               alt="Photo"
             />
             <div
-              aria-label="editors-pick-card-title"
+              aria-label="product-list-title"
               className="absolute flex flex-col gap-3 bottom-20 left-20 md:left-12 md:bottom-16 text-center font-bold px-12 py-3 backdrop-filter backdrop-blur-xs bg-[rgba(0,0,0,0.2)] text-textPapayas-white rounded-xl"
             >
               <h5 className="font-bold">{item.description}</h5>
