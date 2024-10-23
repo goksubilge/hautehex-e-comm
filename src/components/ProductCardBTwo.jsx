@@ -1,27 +1,17 @@
-import ProductCardAData from "../mocks/ProductCardAData";
+import ProductCardBData from "../mocks/ProductCardBData";
 
-function ProductCardAOne() {
+function ProductCardBTwo() {
   return (
     <section
-      className="flex flex-col items-center bg-[#FAFAFA] px-10 py-20"
+      className="flex flex-col items-center px-10 py-20"
       aria-label="bestseller-products-section"
     >
-      <div
-        className="flex flex-col text-center gap-3 max-w-52 md:max-w-full"
-        aria-label="editors-pick-title"
-      >
-        <h4 className="text-mainSpace-grey">Featured Products</h4>
-        <h3>BESTSELLER PRODUCTS</h3>
-        <p className="text-mainSpace-grey">
-          Problems trying to resolve the conflict between
-        </p>
-      </div>
       <div className="flex flex-wrap mt-20 justify-center gap-6  max-w-6xl">
-        {ProductCardAData().map((item, index) => (
+        {ProductCardBData().map((item, index) => (
           <div key={index} className="max-w-60">
             <img
               src={item.picture}
-              className="w-60 h-[427px] object-cover"
+              className="w-60 h-[300px] object-cover"
               alt="shopCardPicture"
             ></img>
 
@@ -42,8 +32,13 @@ function ProductCardAOne() {
           </div>
         ))}
       </div>
+      <div className="flex justify-center items-center my-20">
+        <button className="button-std tracking-[.125em]">
+          LOADING PRODUCTS...
+        </button>
+      </div>
     </section>
   );
 }
 
-export default ProductCardAOne;
+export default ProductCardBTwo;

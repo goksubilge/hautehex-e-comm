@@ -1,7 +1,7 @@
 import Header from "../layout/Header";
 
 import ShopCardBTwo from "../components/ShopCardBTwo";
-import ProductCardAOne from "../components/ProductCardAOne";
+import ProductCardBTwo from "../components/ProductCardBTwo";
 import Clients from "../components/Clients";
 import Footer from "../layout/Footer";
 
@@ -10,7 +10,7 @@ function HomePage() {
     <main>
       <Header />
       <ShopCardBTwo />
-      <ProductCardAOne />
+      <ProductCardBTwo />
       <Clients />
       <Footer />
     </main>

@@ -9,7 +9,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function Header() {
   return (
-    <header className="px-6 top-0 z-30 ">
+    <header className="px-36 top-0 z-30 ">
       <section className="py-8 flex justify-between items-center">
         <Link to="/">
           <h1 className="text-[58px]">HauteHex</h1>

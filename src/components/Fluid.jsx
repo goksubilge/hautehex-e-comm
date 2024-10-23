@@ -1,5 +1,3 @@
-import React from "react";
-
 function Fluid() {
   return (
     <section className="flex flex-col justify-between md:justify-center items-center mt-32 md:mt-0 md:flex-row-reverse gap-24">
