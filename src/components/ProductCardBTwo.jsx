@@ -3,15 +3,15 @@ import ProductCardBData from "../mocks/ProductCardBData";
 function ProductCardBTwo() {
   return (
     <section
-      className="flex flex-col items-center px-10 py-20"
+      className="flex flex-col items-center px-10 py-20 md:py-12"
       aria-label="bestseller-products-section"
     >
-      <div className="flex flex-wrap mt-20 justify-center gap-6  max-w-6xl">
+      <div className="flex flex-wrap md:mb-12 justify-center gap-y-8 md:gap-y-12 max-w-6xl md:gap-x-8">
         {ProductCardBData().map((item, index) => (
-          <div key={index} className="max-w-60">
+          <div key={index} className="flex flex-col items-center ">
             <img
               src={item.picture}
-              className="w-60 h-[300px] object-cover"
+              className="  h-[427px] md:w-60 md:h-[300px] "
               alt="shopCardPicture"
             ></img>
 
@@ -32,7 +32,7 @@ function ProductCardBTwo() {
           </div>
         ))}
       </div>
-      <div className="flex justify-center items-center my-20">
+      <div className="flex justify-center items-center pt-12 md:pt-0">
         <button className="button-std tracking-[.125em]">
           LOADING PRODUCTS...
         </button>

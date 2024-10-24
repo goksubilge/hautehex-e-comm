@@ -9,8 +9,8 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 function Clients() {
   return (
-    <section className="">
-      <div className="flex flex-col sm:flex-row sm:flex-wrap justify-center md:justify-between gap-y-14 gap-x-8 px-48 py-12 bg-[#FAFAFA]">
+    <section aria-label="clients-section">
+      <div className="flex flex-col flex-wrap md:flex-row justify-center items-center py-40 md:py-12 md:px-28 gap-4 bg-[#FAFAFA]">
         <FontAwesomeIcon
           icon={faHooli}
           fixed-width
