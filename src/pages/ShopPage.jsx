@@ -6,7 +6,7 @@ import ProductCardBTwo from "../components/ProductCardBTwo";
 import Clients from "../components/Clients";
 import Footer from "../layout/Footer";
 
-function HomePage() {
+function ShopPage() {
   return (
     <main>
       <Header />
@@ -19,4 +19,4 @@ function HomePage() {
   );
 }
 
-export default HomePage;
+export default ShopPage;
