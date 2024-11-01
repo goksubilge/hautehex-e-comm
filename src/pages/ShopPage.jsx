@@ -1,5 +1,4 @@
 import Header from "../layout/Header";
-
 import ShopCardBTwo from "../components/ShopCardBTwo";
 import ProductFilter from "../components/ProductFilter";
 import ProductCardBTwo from "../components/ProductCardBTwo";
