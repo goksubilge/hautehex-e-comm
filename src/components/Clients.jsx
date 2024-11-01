@@ -10,22 +10,28 @@ import {
 function Clients() {
   return (
     <section aria-label="clients-section">
-      <div className="flex flex-col flex-wrap md:flex-row justify-center items-center py-40 md:py-12 md:px-28 gap-4 bg-[#FAFAFA]">
+      <div className="flex flex-col flex-wrap md:flex-row justify-center items-center py-40 md:py-12 md:px-28 gap-10 bg-[#FAFAFA]">
         <FontAwesomeIcon
           icon={faHooli}
           fixed-width
-          className="text-[#737373] size-40"
+          className="text-[#737373] size-24 px-9"
         />
-        <FontAwesomeIcon icon={faLyft} className="text-[#737373] size-40" />
+        <FontAwesomeIcon
+          icon={faLyft}
+          className="text-[#737373] size-20 px-9"
+        />
         <FontAwesomeIcon
           icon={faPiedPiperHat}
-          className="text-[#737373] size-40"
+          className="text-[#737373] size-20 px-9"
         />
-        <FontAwesomeIcon icon={faStripe} className="text-[#737373] size-40" />
-        <FontAwesomeIcon icon={faAws} className="text-[#737373] size-40" />
+        <FontAwesomeIcon
+          icon={faStripe}
+          className="text-[#737373] size-20 px-9"
+        />
+        <FontAwesomeIcon icon={faAws} className="text-[#737373] size-20 px-9" />
         <FontAwesomeIcon
           icon={faRedditAlien}
-          className="text-[#737373] size-40"
+          className="text-[#737373] size-20 px-9"
         />
       </div>
     </section>
