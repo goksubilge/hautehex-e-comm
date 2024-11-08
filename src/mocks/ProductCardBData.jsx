@@ -16,6 +16,8 @@ const ProductCardBData = () => {
     {
       id: 0,
       picture: ProductCardBTwo1,
+      picture1: ProductCardBTwo1,
+      picture2: ProductCardBTwo1,
       title: "Graphic Design",
       description: "English Department",
       emptyInfo: ["react", "redux", "axios"],
@@ -25,8 +27,14 @@ const ProductCardBData = () => {
     {
       id: 1,
       picture: ProductCardBTwo2,
+      picture1: ProductCardBTwo2,
+      picture2: ProductCardBTwo2,
       title: "Graphic Design",
       description: "English Department",
+      descriptionshort:
+        "Met minim Mollie non desert Alamo est sit cliquey dolor do met sent. RELIT official consequent door ENIM RELIT Mollie. Excitation venial consequent sent nostrum met.",
+      descriptionlong:
+        "Met minim Mollie non desert Alamo est sit cliquey dolor do met sent. RELIT official consequent door ENIM RELIT Mollie. Excitation venial consequent sent nostrum met.Met minim Mollie non desert Alamo est sit cliquey dolor do met sent. RELIT official consequent door ENIM RELIT Mollie. Excitation venial consequent sent nostrum met.Met minim Mollie non desert Alamo est sit cliquey dolor do met sent. RELIT official consequent door ENIM RELIT Mollie. Excitation venial consequent sent nostrum met.",
       emptyInfo: ["react", "redux", "axios"],
       price1: "$16.48",
       price2: "$10.48",
@@ -34,6 +42,8 @@ const ProductCardBData = () => {
     {
       id: 2,
       picture: ProductCardBTwo3,
+      picture1: ProductCardBTwo3,
+      picture2: ProductCardBTwo3,
       title: "Graphic Design",
       description: "English Department",
       emptyInfo: ["react", "redux", "axios"],
@@ -43,6 +53,8 @@ const ProductCardBData = () => {
     {
       id: 3,
       picture: ProductCardBTwo4,
+      picture1: ProductCardBTwo4,
+      picture2: ProductCardBTwo4,
       title: "Graphic Design",
       description: "English Department",
       emptyInfo: ["react", "redux", "axios"],
@@ -52,6 +64,8 @@ const ProductCardBData = () => {
     {
       id: 4,
       picture: ProductCardBTwo5,
+      picture1: ProductCardBTwo5,
+      picture2: ProductCardBTwo5,
       title: "Graphic Design",
       description: "English Department",
       emptyInfo: ["react", "redux", "axios"],
@@ -61,6 +75,8 @@ const ProductCardBData = () => {
     {
       id: 5,
       picture: ProductCardBTwo6,
+      picture1: ProductCardBTwo6,
+      picture2: ProductCardBTwo6,
       title: "Graphic Design",
       description: "English Department",
       emptyInfo: ["react", "redux", "axios"],
