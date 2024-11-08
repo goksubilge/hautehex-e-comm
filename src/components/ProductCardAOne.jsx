@@ -42,11 +42,6 @@ function ProductCardAOne() {
           </div>
         ))}
       </div>
-      {/*       <div className="flex justify-center items-center my-20">
-        <button className="button-std tracking-[.125em]">
-          LOADING PRODUCTS...
-        </button>
-      </div> */}
     </section>
   );
 }

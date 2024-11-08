@@ -2,8 +2,6 @@ import Header from "../layout/Header";
 
 import ShopCardAOne from "../components/ShopCardAOne";
 import ProductCardAOne from "../components/ProductCardAOne";
-import Clients from "../components/Clients";
-
 import Fluid from "../components/Fluid";
 import Highlights from "../components/HighLights";
 import Footer from "../layout/Footer";
